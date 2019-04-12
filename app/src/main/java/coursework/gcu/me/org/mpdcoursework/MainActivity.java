@@ -336,7 +336,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     }
 
     void CreateTitleToDisplay(Integer dataset){
-        textToDisplay.add("Earthquake detected in:" + location.get(dataset) + "on " + days.get(dataset) + "." + months.get(dataset) + " . It was Magnitude " + magnitudes.get(dataset) + " at " + depths.get(dataset) + " km deep.");
+        textToDisplay.add("Earthquake detected in:" + location.get(dataset) + "on " + days.get(dataset) + "." + months.get(dataset) + " . It was Magnitude " + magnitudes.get(dataset) + " at " + depths.get(dataset) + " km deep. Click me for more information!");
     }
 
     void SortFebruary(){
