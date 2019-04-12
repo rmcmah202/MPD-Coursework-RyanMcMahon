@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--
+ MPD XML Starter code Semester B Session 2018 2019
+-->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Great British Earthquakes"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/refreshButton"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="191dp"
+                android:layout_marginEnd="13dp"
+                android:text="Refresh Data" />
+
+            <ListView
+                android:id="@+id/listOfEarthquakes"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_below="@id/heading"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="0dp"
+
+                android:layout_marginRight="150dp" />
+
+            <TextView
+                android:id="@+id/credit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listOfEarthquakes"
+                android:text="Contains British Geological Survey materials ©NERC 2019"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/monthSelectButton"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/listOfEarthquakes"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="-139dp"
+                android:text="Filter Month" />
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="191dp"
+                android:layout_marginEnd="13dp"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/marchSelect"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/listOfEarthquakes"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="-139dp"
+                android:text="March" />
+
+            <Button
+                android:id="@+id/februarySelect"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading"
+                android:layout_alignEnd="@+id/listOfEarthquakes"
+                android:layout_marginEnd="-139dp"
+                android:text="February" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
